@@ -27,7 +27,7 @@ public class PeliculaService {
     }
 
     private void validarAnioLanzamiento(PeliculaEntity peliculaEntity){
-        if (peliculaEntity.getAnioLanzamiento() > 1930){
+        if (peliculaEntity.getAnioLanzamiento() < 1930){
             throw new IllegalStateException("No puede ser anterior a 1930");
         }
     }
