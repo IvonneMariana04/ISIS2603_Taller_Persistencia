@@ -33,13 +33,13 @@ public class PeliculaService {
     }
 
     @Transactional
-    public void crearPelicula(PeliculaEntity peliculaEntity){
+    public PeliculaEntity crearPelicula(PeliculaEntity peliculaEntity){
         
         validarTituloNoVacio(peliculaEntity);
         validarTituloNoRepetido(peliculaEntity);
         validarAnioLanzamiento(peliculaEntity);
 
-        peliculaRepository.save(peliculaEntity);
+        return peliculaRepository.save(peliculaEntity);
     }
 
 }

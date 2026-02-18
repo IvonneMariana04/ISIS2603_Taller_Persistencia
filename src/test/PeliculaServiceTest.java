@@ -35,7 +35,6 @@ public class PeliculaServiceTest {
         assertEquals(newEntity, result);
         assertEquals(newEntity.getTitulo(), entity.getTitulo);
         assertEquals(newEntity.getAnioLanzamiento, entity.getAnioLanzamiento);
-        
     }
 
     @Test
